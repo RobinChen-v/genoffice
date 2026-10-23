@@ -11,6 +11,15 @@ export {
 export { decodeEntities } from './parse-xml-text'
 export { sdtCheckboxGlyphs, sdtCheckboxIsChecked } from './checkbox-control'
 export {
+  buildContentControlXml,
+  isContentControlLock,
+  nextContentControlId,
+  CONTENT_CONTROL_LOCKS,
+  type ContentControlLock,
+  type ContentControlShell,
+  type ContentControlSpec,
+} from './content-control'
+export {
   parseDocx,
   reconcileGridColumns,
   paraCsFormat,
@@ -25,9 +34,11 @@ export {
   ifBranch,
   mergeBlockTree,
   mergeDataFromRows,
+  mergeFieldInstruction,
   mergeFieldName,
   mergeFieldSwitches,
   mergeFieldText,
+  mergeOutputFileName,
   mergeRecords,
   placeholderText,
   splitInstruction,
@@ -241,16 +252,12 @@ export {
   type RevisionXmlType,
 } from './revision-xml'
 export {
-  resolveParagraphProps,
-  resolveCtxOf,
-  resolveParagraphPropsXml,
-  resolveRunProps,
-  shadowCompare,
-  type EffectivePPr,
-  type EffectiveRPr,
-  type PropSource,
-  type ResolveCompat,
-  type ResolveCtx,
-  type ResolveDiff,
-  type TableCond,
-} from './resolve-props'
+  compareBlocks,
+  compareDocuments,
+  DEFAULT_COMPARE_AUTHOR,
+  type CompareGranularity,
+  type CompareIgnore,
+  type CompareOptions,
+  type CompareResult,
+  type CompareSummary,
+} from './compare'
