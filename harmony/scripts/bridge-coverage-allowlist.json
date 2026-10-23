@@ -1,0 +1,66 @@
+{
+  "_comment": [
+    "桥覆盖白名单：渲染层有调用、壳侧（Index.ets mock / bridge/*.ets）未实现的方法。",
+    "makeBridge 的 Proxy 对未实现方法静默 resolve(undefined) → 用户侧症状是「点了没反应」。",
+    "规则：修掉一个就删一条（只减不增）；确需扩容用 node scripts/check-bridge-coverage.mjs --update，",
+    "这会把 budget 写成当前条目数，git diff 里能看见预算变化，review 时才不会被顺手绕过。",
+    "每轮 verify-all 都会校验：新增缺口报红 + 白名单过期报红 + 超预算报红。"
+  ],
+  "budget": 9,
+  "entries": [
+    {
+      "ns": "aiOfficeTabs",
+      "method": "showAppMenu",
+      "kind": "call",
+      "ui": 1
+    },
+    {
+      "ns": "aiOfficeTabs",
+      "method": "showTabMenu",
+      "kind": "call",
+      "ui": 1
+    },
+    {
+      "ns": "desktop",
+      "method": "convertAltChunkHtml",
+      "kind": "call",
+      "ui": 1
+    },
+    {
+      "ns": "desktop",
+      "method": "onViewImage",
+      "kind": "subscribe",
+      "ui": 1
+    },
+    {
+      "ns": "desktop",
+      "method": "onZoteroRequest",
+      "kind": "subscribe",
+      "ui": 1
+    },
+    {
+      "ns": "desktop",
+      "method": "respondToZotero",
+      "kind": "call",
+      "ui": 2
+    },
+    {
+      "ns": "markdownApi",
+      "method": "onViewImage",
+      "kind": "subscribe",
+      "ui": 1
+    },
+    {
+      "ns": "pdfApi",
+      "method": "onFileRenamed",
+      "kind": "subscribe",
+      "ui": 1
+    },
+    {
+      "ns": "pdfApi",
+      "method": "onSaveAsFlow",
+      "kind": "subscribe",
+      "ui": 1
+    }
+  ]
+}

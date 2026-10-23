@@ -1,0 +1,301 @@
+{
+  "_comment": [
+    "恒空桩注册表：Index.ets 中所有 `function () { return Promise.resolve(null); }` 的桩。",
+    "分类：truly-unsupported（功能缺失，需 UI guard）/ legitimate-null（null 是正确语义）/ ambient（自动路径，null 预期）。",
+    "生成命令：node scripts/extract-stubs.mjs",
+    "门禁：verify-all 的 checkStubRegistryFresh 校验此文件与 Index.ets 一致。"
+  ],
+  "generated": "2026-10-22T02:47:59.331Z",
+  "total": 46,
+  "byCategory": {
+    "truly-unsupported": 18,
+    "legitimate-null": 18,
+    "ambient": 10
+  },
+  "byNamespace": {
+    "desktop": 9,
+    "projectApi": 2,
+    "pdfApi": 1,
+    "slidesApi": 28,
+    "aiOffice": 5,
+    "aiOfficeProject": 1
+  },
+  "stubs": [
+    {
+      "ns": "desktop",
+      "method": "openDocxDecrypt",
+      "category": "truly-unsupported",
+      "line": 1363
+    },
+    {
+      "ns": "desktop",
+      "method": "consumePendingOpenDocx",
+      "category": "legitimate-null",
+      "line": 1367
+    },
+    {
+      "ns": "desktop",
+      "method": "consumeNewBlankDoc",
+      "category": "legitimate-null",
+      "line": 1368
+    },
+    {
+      "ns": "desktop",
+      "method": "consumeAiDocContent",
+      "category": "legitimate-null",
+      "line": 1369
+    },
+    {
+      "ns": "desktop",
+      "method": "saveMergedPdf",
+      "category": "truly-unsupported",
+      "line": 1493
+    },
+    {
+      "ns": "desktop",
+      "method": "consumeHeadlessExport",
+      "category": "legitimate-null",
+      "line": 1528
+    },
+    {
+      "ns": "desktop",
+      "method": "addPastedImage",
+      "category": "truly-unsupported",
+      "line": 1614
+    },
+    {
+      "ns": "desktop",
+      "method": "readAttachmentImage",
+      "category": "truly-unsupported",
+      "line": 1617
+    },
+    {
+      "ns": "desktop",
+      "method": "openNewTab",
+      "category": "truly-unsupported",
+      "line": 1621
+    },
+    {
+      "ns": "projectApi",
+      "method": "consumePendingOpen",
+      "category": "legitimate-null",
+      "line": 2309
+    },
+    {
+      "ns": "projectApi",
+      "method": "getTransition",
+      "category": "legitimate-null",
+      "line": 2320
+    },
+    {
+      "ns": "pdfApi",
+      "method": "ocrPage",
+      "category": "truly-unsupported",
+      "line": 3383
+    },
+    {
+      "ns": "slidesApi",
+      "method": "applyTxn",
+      "category": "ambient",
+      "line": 4000
+    },
+    {
+      "ns": "slidesApi",
+      "method": "repasteSlide",
+      "category": "truly-unsupported",
+      "line": 4117
+    },
+    {
+      "ns": "slidesApi",
+      "method": "addComment",
+      "category": "truly-unsupported",
+      "line": 4119
+    },
+    {
+      "ns": "slidesApi",
+      "method": "deleteComment",
+      "category": "truly-unsupported",
+      "line": 4120
+    },
+    {
+      "ns": "slidesApi",
+      "method": "setSections",
+      "category": "truly-unsupported",
+      "line": 4122
+    },
+    {
+      "ns": "slidesApi",
+      "method": "addSection",
+      "category": "truly-unsupported",
+      "line": 4123
+    },
+    {
+      "ns": "slidesApi",
+      "method": "renameSection",
+      "category": "truly-unsupported",
+      "line": 4124
+    },
+    {
+      "ns": "slidesApi",
+      "method": "removeSection",
+      "category": "truly-unsupported",
+      "line": 4125
+    },
+    {
+      "ns": "slidesApi",
+      "method": "insertImageUrl",
+      "category": "ambient",
+      "line": 4252
+    },
+    {
+      "ns": "slidesApi",
+      "method": "replacePictureUrl",
+      "category": "ambient",
+      "line": 4253
+    },
+    {
+      "ns": "slidesApi",
+      "method": "endHistoryBatch",
+      "category": "legitimate-null",
+      "line": 4268
+    },
+    {
+      "ns": "slidesApi",
+      "method": "applyEditScript",
+      "category": "ambient",
+      "line": 4292
+    },
+    {
+      "ns": "slidesApi",
+      "method": "aiSnapshotRestore",
+      "category": "ambient",
+      "line": 4293
+    },
+    {
+      "ns": "slidesApi",
+      "method": "insertMedia",
+      "category": "truly-unsupported",
+      "line": 4294
+    },
+    {
+      "ns": "slidesApi",
+      "method": "insertModel3d",
+      "category": "truly-unsupported",
+      "line": 4295
+    },
+    {
+      "ns": "slidesApi",
+      "method": "moveSection",
+      "category": "truly-unsupported",
+      "line": 4384
+    },
+    {
+      "ns": "slidesApi",
+      "method": "removeSectionSlides",
+      "category": "truly-unsupported",
+      "line": 4385
+    },
+    {
+      "ns": "slidesApi",
+      "method": "audienceReady",
+      "category": "legitimate-null",
+      "line": 5026
+    },
+    {
+      "ns": "slidesApi",
+      "method": "clipboardExternal",
+      "category": "legitimate-null",
+      "line": 5029
+    },
+    {
+      "ns": "slidesApi",
+      "method": "privateFontData",
+      "category": "legitimate-null",
+      "line": 5033
+    },
+    {
+      "ns": "slidesApi",
+      "method": "editConnectorEndpoints",
+      "category": "legitimate-null",
+      "line": 5035
+    },
+    {
+      "ns": "slidesApi",
+      "method": "editTransformMulti",
+      "category": "legitimate-null",
+      "line": 5036
+    },
+    {
+      "ns": "slidesApi",
+      "method": "masterDeleteElement",
+      "category": "legitimate-null",
+      "line": 5037
+    },
+    {
+      "ns": "slidesApi",
+      "method": "getChartData",
+      "category": "legitimate-null",
+      "line": 5038
+    },
+    {
+      "ns": "slidesApi",
+      "method": "getLink",
+      "category": "legitimate-null",
+      "line": 5039
+    },
+    {
+      "ns": "slidesApi",
+      "method": "addMediaBytes",
+      "category": "legitimate-null",
+      "line": 5041
+    },
+    {
+      "ns": "slidesApi",
+      "method": "applyHeaderFooter",
+      "category": "legitimate-null",
+      "line": 5042
+    },
+    {
+      "ns": "slidesApi",
+      "method": "getMediaData",
+      "category": "legitimate-null",
+      "line": 5043
+    },
+    {
+      "ns": "aiOffice",
+      "method": "githubStars",
+      "category": "ambient",
+      "line": 6401
+    },
+    {
+      "ns": "aiOffice",
+      "method": "cloudProjectsCached",
+      "category": "ambient",
+      "line": 6405
+    },
+    {
+      "ns": "aiOffice",
+      "method": "cloudProjectsSync",
+      "category": "ambient",
+      "line": 6406
+    },
+    {
+      "ns": "aiOffice",
+      "method": "addFolderRoot",
+      "category": "truly-unsupported",
+      "line": 6526
+    },
+    {
+      "ns": "aiOffice",
+      "method": "rerankSearch",
+      "category": "ambient",
+      "line": 6557
+    },
+    {
+      "ns": "aiOfficeProject",
+      "method": "createProject",
+      "category": "ambient",
+      "line": 6689
+    }
+  ]
+}

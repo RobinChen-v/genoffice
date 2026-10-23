@@ -1,0 +1,8 @@
+[
+  "add-sheet",
+  "duplicate-sheet",
+  "remove-sheet",
+  "rename-sheet",
+  "set-sheet-hidden",
+  "reorder-sheets"
+]

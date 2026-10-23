@@ -1,0 +1,56 @@
+# HarmonyOS ArkWeb 壳工程构建产物与缓存
+# 源码变更请走 DevEco Studio 重 Build Hap；本仓库只跟踪源码与配置
+
+# hvigor / DevEco 缓存
+.hvigor/
+.bitfun/
+oh_modules/
+node_modules/
+
+# ArkTS 构建产物（DevEco Build → entry/build/）
+entry/build/
+entry/.preview/
+
+# assembleApp 工程级产物（harmony/build/outputs/*.app，单个 138MB，绝不入库）
+build/
+
+# CMake / Ninja 配置缓存
+entry/.cxx/
+
+# Rust sidecar 动态库：由 `sh scripts/build-xlsx-sidecar-ohos.sh` 重建，不入库
+entry/libs/
+
+# 签名材料：私钥/密钥库与 hvigor 生成的 material 目录绝不入库
+# （证书链 genoffice.cer 与发布 Profile GenOfficeRelease.p7b 非机密，允许跟踪）
+key_csr/*.p12
+key_csr/material/
+key_csr/unused-mismatch/
+
+# rawfile 资源（web/ 与 injected/ 均由 sync-web.sh / build-injected.mjs 生成，不入库）
+entry/src/main/resources/rawfile/
+
+# 自动生成的 mock 合约文件（由 gen-mock.mjs 从 bridge-contract.json 派生）
+scripts/mock.generated.js
+
+# obf 混淆、签名临时
+entry/obfuscation/
+entry/sign/
+
+
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# workbuddy 脚本下的临时验证产物（HAP 解包检查等）
+scripts/.tmp-*/
+
+# 门控验证产物（verify-all.mjs / 突变日志 / 临时探针）——均为可重复生成的报告，不入库
+verify-out.txt
+verify-mutant.txt
+scripts/_probe.mjs

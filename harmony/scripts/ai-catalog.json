@@ -1,0 +1,137 @@
+[
+  {
+    "id": "glm",
+    "label": "GLM（智谱）",
+    "models": [],
+    "defaultModel": "glm-5.3",
+    "keyPlaceholder": "sk-...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "deepseek",
+    "label": "DeepSeek",
+    "models": [],
+    "defaultModel": "deepseek-v4-pro",
+    "keyPlaceholder": "sk-...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "qwen",
+    "label": "Qwen（阿里云百炼）",
+    "models": [],
+    "defaultModel": "qwen3.8-max",
+    "keyPlaceholder": "sk-...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "doubao",
+    "label": "豆包（火山方舟）",
+    "models": [],
+    "defaultModel": "doubao-seed-2-1-pro-260628",
+    "keyPlaceholder": "sk-...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "kimi",
+    "label": "Kimi（月之暗面）",
+    "models": [],
+    "defaultModel": "kimi-k3",
+    "keyPlaceholder": "sk-...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "minimax",
+    "label": "MiniMax",
+    "models": [],
+    "defaultModel": "MiniMax-M3",
+    "keyPlaceholder": "sk-...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "custom",
+    "label": "自定义端点（OpenAI 兼容）",
+    "models": [],
+    "defaultModel": "",
+    "keyPlaceholder": "sk-...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "anthropic",
+    "label": "Claude（Anthropic 协议 /v1/messages）",
+    "models": [],
+    "defaultModel": "claude-sonnet-5",
+    "keyPlaceholder": "sk-ant-...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "openrouter",
+    "label": "OpenRouter（聚合网关）",
+    "models": [],
+    "defaultModel": "openrouter/auto",
+    "keyPlaceholder": "sk-or-...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "openai",
+    "label": "OpenAI",
+    "models": [],
+    "defaultModel": "gpt-5.6-terra",
+    "keyPlaceholder": "sk-...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "gemini",
+    "label": "Gemini（OpenAI 兼容路径）",
+    "models": [],
+    "defaultModel": "gemini-3.7-flash",
+    "keyPlaceholder": "AIza...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "xai",
+    "label": "Grok",
+    "models": [],
+    "defaultModel": "grok-4.6",
+    "keyPlaceholder": "xai-...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "mistral",
+    "label": "Mistral",
+    "models": [],
+    "defaultModel": "mistral-medium-latest",
+    "keyPlaceholder": "sk-...",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "opencode-zen",
+    "label": "OpenCode Zen",
+    "models": [],
+    "defaultModel": "claude-sonnet-5",
+    "keyPlaceholder": "",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  },
+  {
+    "id": "opencode-go",
+    "label": "OpenCode Go",
+    "models": [],
+    "defaultModel": "kimi-k2.7-code",
+    "keyPlaceholder": "",
+    "needsBaseUrl": true,
+    "defaultBaseUrl": ""
+  }
+]

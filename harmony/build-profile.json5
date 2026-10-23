@@ -1,0 +1,74 @@
+{
+  // 公开快照：签名材料不随仓库分发，请按 key_csr/README.md 自行申请后放到 key_csr/。
+  // storePassword / keyPassword 必须是 DevEco 写入的密文，或留空（verify-all 的
+  // checkSigningConfigHygiene 会拒绝明文口令）。
+  "app": {
+    "signingConfigs": [
+      {
+        // 发布签名（assembleApp 打可上架 .app 用）
+        "name": "release",
+        "material": {
+          "storePassword": "",
+          "certpath": "./key_csr/genoffice-release.cer",
+          "keyAlias": "genoffice",
+          "keyPassword": "",
+          "profile": "./key_csr/GenOfficeRelease.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "./key_csr/GenOffice.p12"
+        },
+        "type": "HarmonyOS"
+      },
+      {
+        // 调试签名（DevEco → Project Structure → Signing Configs 自动生成后覆盖本机路径）
+        "name": "default",
+        "material": {
+          "storePassword": "",
+          "certpath": "./key_csr/debug.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "",
+          "profile": "./key_csr/debug.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "./key_csr/debug.p12"
+        },
+        "type": "HarmonyOS"
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "targetSdkVersion": "6.1.0(23)",
+        "compatibleSdkVersion": "6.1.0(23)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        },
+        "signingConfig": "default"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+node_modules
+out/
+dist/
+release/
+*.log
+.DS_Store
+.refs/
+.env
+.env.*
+electron-builder.env
+~$*
+
+# Local ad-hoc e2e driver scripts (not pushed); the folder and README are tracked, the scripts are not
+/scripts/drivers/driver.*.mjs
+/probe*.mjs
+/apps/shell/build/THIRD-PARTY-NOTICES.txt
+/example/
+/.task/
+/docs-archive/
+.idea/
+.claude/
+
+# Local build artifacts dropped in the repo root
+/*.dmg
+/*.exe
+/*.zip
+/windows/
+
+# Playwright artifacts
+/test-results/
+
+.cursor/rules/git-remote.mdc
+__pycache__/
+/notes/
+/MEMORY.md
+
+# Local fidelity-run scratch space: production repro documents and pack caches.
+# Never committable — a stray `git add -A` would push user files public.
+/working_dir/
+
+# One-off verification tests kept while chasing a fix; promote to a real test
+# file (or delete) instead of committing them under this name.
+_scratch-*
+
+# workbuddy 状态文件（仿真脚本 + 会话记忆）—— 不入库
+.tmp/
+.workbuddy/
+.merkle-snapshot.json
+
+# IDE tool config directories
+.appanalyzer/
+.codegenie/
+harmony/.codegenie/
+/.bitfun/
+
+# Nested upstream reference clone (accidental full clone inside repo, has own .git) - do not track
+/GenOffice/
+
+# Harmony gate verification reports (regenerable by harmony/scripts/verify-all.mjs)
+/harmony/verify-out.txt
+/harmony/verify-mutant.txt
+/harmony/scripts/_probe.mjs

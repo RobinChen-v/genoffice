@@ -1,0 +1,24 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "GenOffice ArkWeb 壳模块"
+    },
+    {
+      "name": "ability_desc",
+      "value": "GenOffice 主入口"
+    },
+    {
+      "name": "read_pasteboard_reason",
+      "value": "粘贴时需要读取剪贴板内容，用于在文档和表格中粘贴文本"
+    },
+    {
+      "name": "file_access_persist_reason",
+      "value": "在「最近打开」中直接重新打开此前编辑过的文档，无需每次重新选择文件"
+    },
+    {
+      "name": "custom_screen_capture_reason",
+      "value": "在表格中插入截图时需要捕获当前屏幕画面"
+    }
+  ]
+}

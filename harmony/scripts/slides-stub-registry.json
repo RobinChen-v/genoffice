@@ -1,0 +1,65 @@
+{
+  "_comment": [
+    "PPT 壳侧 slidesMock 的「恒空桩」登记表（批次 E-6 第二层治理）。",
+    "这些方法在 Index.ets 的 slidesMock 里**键存在**、函数体恒 return Promise.resolve(null / [] / {})，",
+    "覆盖门禁看不见（它不是缺口：check-bridge-coverage 只比「有无该方法」），ppt-bridge 里也没有",
+    "对应的引擎 op（元素工厂/表格/图表/批注/节）→ 对用户同样是「入口可见但不可用」。",
+    "verify-all 的 checkSlidesUnsupportedWiring 断言：本表五类并集 == 从 Index.ets 解析出的恒空桩集合",
+    "（解析按「同名后者胜」，否则 applyEditScript 那类被真实现覆盖的旧桩会误报）。",
+    "分类含义：",
+    "  guarded    渲染层已插 guard（toast / 置灰），见 unsupported-features.ts 的 UNSUPPORTED_STUBS；",
+    "  aiOnly     只有 AI 工具链内部调用，模型按 null 自行降级（不提示，否则对话里全是噪音）；",
+    "  benign     事务 / 历史批次类，渲染层不依赖返回值（桩返回即等价于「空操作」）；",
+    "  emptyOk    合法空态，界面显示「暂无」即可（颜色方案 / 形状库 / 样式模板的默认清单）；",
+    "  bestEffort 调用点自带 ?? 兜底，桩返回即等价于「没有这项数据」，D无 UI 症状。"
+  ],
+  "guarded": [
+    "insertMedia",
+    "insertModel3d",
+    "repasteSlide",
+    "addComment",
+    "deleteComment",
+    "setSections",
+    "addSection",
+    "renameSection",
+    "removeSection",
+    "removeSectionSlides",
+    "moveSection"
+  ],
+  "aiOnly": [
+    "aiSnapshotRestore",
+    "insertImageUrl",
+    "replacePictureUrl"
+  ],
+  "benign": [
+    "applyTxn",
+    "endHistoryBatch",
+    "beginHistoryBatch"
+  ],
+  "emptyOk": [
+    "getChartColorSchemes",
+    "getShapeKeys",
+    "listStyleTemplates"
+  ],
+  "bestEffort": [
+    "audienceReady",
+    "privateFontData",
+    "privateFontFaces",
+    "clipboardExternal",
+    "editConnectorEndpoints",
+    "editTransformMulti",
+    "getLink",
+    "applyHeaderFooter",
+    "addMediaBytes",
+    "masterDeleteElement",
+    "getChartData",
+    "getMediaData"
+  ],
+  "notes": {
+    "applyEditScript": "同名两次定义（旧桩 / 真实现）→ 后者胜，已不是桩。门禁 checkMockDuplicateKeys 盯这类遮蔽。stub-registry 仍列为 ambient 因为 extract-stubs 按首次定义解析。",
+    "moveSlides": "曾被第二个空桩定义遮蔽了真实现（拖拽排序幻灯片静默失效），批次 E-6 已删桩恢复。",
+    "M9-元素工厂": "addElement/addTable/addChart/addSmartArt/insertImage/duplicateElements/pasteElements/batchEditTransform/tableMerge/tableStructure/editChart/replacePictureBytes/copyElements/reorderElement/addInk/addImageBytes/editTableCell/setTableColWidth/setTableRowHeight/editTableStyle/setLink 已从恒空桩改为调用 pptx-bridge 引擎 op（M9 量级），不再在 guarded 中登记。",
+    "insertMedia/insertModel3d": "壳内无系统文件选择器，已从恒空桩改为带参数函数（非恒空桩），Aguard 移至 UNSUPPORTED_ACTIONS。",
+    "moveSection/removeSectionSlides": "在 Index.ets 中不在 slidesMock 命名空间（属 unknown），guard 移至 UNSUPPORTED_ACTIONS。"
+  }
+}

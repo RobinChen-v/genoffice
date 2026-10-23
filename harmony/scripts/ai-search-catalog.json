@@ -1,0 +1,20 @@
+[
+  {
+    "id": "serper",
+    "label": "Serper（Google 结果，含图片搜索）",
+    "keyPlaceholder": "申请 serper.dev 免费 Key",
+    "imageSearch": true
+  },
+  {
+    "id": "tavily",
+    "label": "Tavily（面向 LLM 的搜索 API，仅网页结果）",
+    "keyPlaceholder": "申请 tavily.com 免费 Key（tvly-...）",
+    "imageSearch": false
+  },
+  {
+    "id": "parallel",
+    "label": "Parallel（v1 search，仅网页结果）",
+    "keyPlaceholder": "申请 parallel.ai API Key",
+    "imageSearch": false
+  }
+]

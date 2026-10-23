@@ -1,0 +1,141 @@
+[
+  {
+    "id": "openai",
+    "label": "OpenAI 兼容生图（/images/generations）",
+    "description": "任何提供 /images/generations 的端点都能用；填 Key 后可改端点与模型 id。",
+    "keyPlaceholder": "sk-...",
+    "defaultBaseUrl": "https://api.openai.com/v1",
+    "imageProtocol": "openai-images",
+    "imageModels": [
+      "gpt-image-2",
+      "gpt-image-1.5",
+      "gpt-image-1",
+      "gpt-image-1-mini",
+      "dall-e-3"
+    ],
+    "defaultImageModel": "gpt-image-1",
+    "analysisProtocol": "openai-chat",
+    "analysisModels": [
+      "gpt-5.6-sol",
+      "gpt-5.6-terra",
+      "gpt-5.6-luna",
+      "gpt-5.5",
+      "gpt-5.4-mini"
+    ],
+    "defaultAnalysisModel": "gpt-5.6-terra",
+    "videoAnalysis": false
+  },
+  {
+    "id": "glm",
+    "label": "GLM（智谱）",
+    "description": "CogView 生图走 /images/generations；GLM-V 解析图片。在「AI 模型」里配过智谱的话，这里不填 Key 也会自动复用。",
+    "keyPlaceholder": "xxxxxxxx.xxxxxxxx",
+    "defaultBaseUrl": "https://open.bigmodel.cn/api/paas/v4",
+    "imageProtocol": "openai-images",
+    "imageModels": [
+      "cogview-4-250304",
+      "cogview-3-flash"
+    ],
+    "defaultImageModel": "cogview-4-250304",
+    "analysisProtocol": "openai-chat",
+    "analysisModels": [
+      "glm-4.6v",
+      "glm-4.6v-flash"
+    ],
+    "defaultAnalysisModel": "glm-4.6v",
+    "videoAnalysis": true
+  },
+  {
+    "id": "qwen",
+    "label": "Qwen（阿里云百炼）",
+    "description": "qwen-image 生图与 qwen3-vl 解析都走百炼的 OpenAI 兼容端点；视频解析可用。",
+    "keyPlaceholder": "sk-...",
+    "defaultBaseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "imageProtocol": "openai-images",
+    "imageModels": [
+      "qwen-image-plus",
+      "qwen-image"
+    ],
+    "defaultImageModel": "qwen-image-plus",
+    "analysisProtocol": "openai-chat",
+    "analysisModels": [
+      "qwen3-vl-plus",
+      "qwen3-vl-flash",
+      "qwen3.8-max",
+      "qwen3.7-plus"
+    ],
+    "defaultAnalysisModel": "qwen3-vl-plus",
+    "videoAnalysis": true
+  },
+  {
+    "id": "doubao",
+    "label": "豆包（火山方舟）",
+    "description": "Seedream 生图、Seed 解析（图片与视频）都在方舟的 /api/v3 上。",
+    "keyPlaceholder": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "defaultBaseUrl": "https://ark.cn-beijing.volces.com/api/v3",
+    "imageProtocol": "openai-images",
+    "imageModels": [
+      "doubao-seedream-5-0-260128",
+      "doubao-seedream-4-5-251128",
+      "doubao-seedream-4-0-250828"
+    ],
+    "defaultImageModel": "doubao-seedream-5-0-260128",
+    "analysisProtocol": "openai-chat",
+    "analysisModels": [
+      "doubao-seed-2-1-pro-260628",
+      "doubao-seed-2-1-turbo-260628"
+    ],
+    "defaultAnalysisModel": "doubao-seed-2-1-pro-260628",
+    "videoAnalysis": true
+  },
+  {
+    "id": "xai",
+    "label": "Grok（xAI）",
+    "description": "Grok Imagine 生图；Grok 只解析图片（视频不支持）。",
+    "keyPlaceholder": "xai-...",
+    "defaultBaseUrl": "https://api.x.ai/v1",
+    "imageProtocol": "openai-images",
+    "imageModels": [
+      "grok-imagine-image-2.0",
+      "grok-2-image-1212"
+    ],
+    "defaultImageModel": "grok-imagine-image-2.0",
+    "analysisProtocol": "openai-chat",
+    "analysisModels": [
+      "grok-4.6",
+      "grok-4.5"
+    ],
+    "defaultAnalysisModel": "grok-4.6",
+    "videoAnalysis": false
+  },
+  {
+    "id": "gemini",
+    "label": "Gemini（OpenAI 兼容路径，仅解析）",
+    "description": "解析走 Gemini 的 OpenAI 兼容路径（/v1beta/openai），图片与视频都行；生图需原生协议，鸿蒙侧未接 → 只用于解析。",
+    "keyPlaceholder": "AIza...",
+    "defaultBaseUrl": "https://generativelanguage.googleapis.com/v1beta/openai",
+    "analysisProtocol": "openai-chat",
+    "analysisModels": [
+      "gemini-3.7-flash",
+      "gemini-3.1-pro-preview",
+      "gemini-3.6-flash"
+    ],
+    "defaultAnalysisModel": "gemini-3.7-flash",
+    "videoAnalysis": true
+  },
+  {
+    "id": "custom",
+    "label": "自定义端点（生图 + 图片 / 视频理解）",
+    "description": "填你自己的网关：生图走 /images/generations，理解走聊天端点的多模态输入（OpenAI 兼容或 Anthropic 协议均可）。视频理解取决于所选模型是否支持。",
+    "keyPlaceholder": "sk-...",
+    "defaultBaseUrl": "",
+    "needsBaseUrl": true,
+    "imageProtocol": "openai-images",
+    "imageModels": [],
+    "defaultImageModel": "",
+    "analysisProtocol": "openai-chat",
+    "analysisModels": [],
+    "defaultAnalysisModel": "",
+    "videoAnalysis": true
+  }
+]

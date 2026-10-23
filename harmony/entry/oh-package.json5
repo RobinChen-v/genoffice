@@ -1,0 +1,10 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "GenOffice entry module (ArkWeb shell)",
+  "dependencies": {
+    // 声明依赖后 ArkTS import 'libxlsx_sidecar.so' 才能通过编译(与官方
+    // NativeSoIntegration 样例一致:声明名 = .so 文件名)
+    "libxlsx_sidecar.so": "file:./src/main/cpp/types/libxlsx_sidecar"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "libxlsx_sidecar.so",
+  "version": "1.0.0",
+  "description": "Prebuilt in-process NAPI bridge for the sheets xlsx engine",
+  "main": "index.d.ts",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

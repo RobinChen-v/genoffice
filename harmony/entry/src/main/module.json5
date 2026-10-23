@@ -1,0 +1,142 @@
+{
+  "module": {
+    "name": "entry",
+    "type": "entry",
+    "description": "$string:ability_desc",
+    "mainElement": "EntryAbility",
+    "deviceTypes": [
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
+      },
+      {
+        "name": "ohos.permission.READ_PASTEBOARD",
+        "reason": "$string:read_pasteboard_reason",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.PRINT"
+      },
+      {
+        "name": "ohos.permission.FILE_ACCESS_PERSIST",
+        "reason": "$string:file_access_persist_reason",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.CUSTOM_SCREEN_CAPTURE",
+        "reason": "$string:custom_screen_capture_reason",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "inuse"
+        }
+      }
+    ],
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "exported": true,
+        "description": "$string:ability_desc",
+        "icon": "$media:app_icon",
+        "label": "$string:app_name",
+        "startWindowIcon": "$media:start_icon",
+        "startWindowBackground": "$color:start_window_background",
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "ohos.want.action.home"
+            ]
+          },
+          {
+            // 系统「打开方式」/ 文件管理器「用其他应用打开」：按 MIME 类型被拉起。
+            // 分发来的文件 URI 由 EntryAbility(onCreate/onNewWant) → IncomingOpen →
+            // Index 页 → shell 桥按扩展名路由到对应 app tab（详见 IncomingOpen.ets）。
+            "entities": [
+              "entity.system.browsable"
+            ],
+            "actions": [
+              "ohos.want.action.viewData"
+            ],
+            "uris": [
+              {
+                "scheme": "file",
+                "type": "application/pdf",
+                "utd": "general.pdf"
+              },
+              {
+                "scheme": "file",
+                "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                "utd": "general.docx"
+              },
+              {
+                "scheme": "file",
+                "type": "application/msword",
+                "utd": "general.doc"
+              },
+              {
+                "scheme": "file",
+                "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                "utd": "general.xlsx"
+              },
+              {
+                "scheme": "file",
+                "type": "application/vnd.ms-excel",
+                "utd": "general.xls"
+              },
+              {
+                "scheme": "file",
+                "type": "text/csv",
+                "utd": "general.csv"
+              },
+              {
+                "scheme": "file",
+                "type": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+                "utd": "general.pptx"
+              },
+              {
+                "scheme": "file",
+                "type": "application/vnd.ms-powerpoint",
+                "utd": "general.ppt"
+              },
+              {
+                "scheme": "file",
+                "type": "text/markdown",
+                "utd": "general.md"
+              },
+              {
+                "scheme": "file",
+                "type": "text/plain",
+                "utd": "general.txt"
+              },
+              {
+                "scheme": "file",
+                "type": "text/html",
+                "utd": "general.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

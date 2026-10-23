@@ -1,0 +1,4168 @@
+{
+  "shell": {
+    "aiOffice": {
+      "recents": {
+        "kind": "invoke",
+        "params": [
+          "query"
+        ],
+        "channel": "HOME_CHANNELS.recents"
+      },
+      "searchFiles": {
+        "kind": "invoke",
+        "params": [
+          "query"
+        ],
+        "channel": "HOME_CHANNELS.searchFiles"
+      },
+      "rerankSearch": {
+        "kind": "invoke",
+        "params": [
+          "query"
+        ],
+        "channel": "HOME_CHANNELS.rerankSearch"
+      },
+      "getFileSearchSettings": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.getFileSearchSettings"
+      },
+      "setFileSearchSettings": {
+        "kind": "invoke",
+        "params": [
+          "patch"
+        ],
+        "channel": "HOME_CHANNELS.setFileSearchSettings"
+      },
+      "testFileSearchRerank": {
+        "kind": "invoke",
+        "params": [
+          "input"
+        ],
+        "channel": "HOME_CHANNELS.testFileSearchRerank"
+      },
+      "starred": {
+        "kind": "invoke",
+        "params": [
+          "query"
+        ],
+        "channel": "HOME_CHANNELS.starred"
+      },
+      "statPaths": {
+        "kind": "invoke",
+        "params": [
+          "paths"
+        ],
+        "channel": "HOME_CHANNELS.statPaths"
+      },
+      "toggleStar": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "HOME_CHANNELS.toggleStar"
+      },
+      "openPath": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "HOME_CHANNELS.openPath"
+      },
+      "browse": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.browse"
+      },
+      "newDoc": {
+        "kind": "invoke",
+        "params": [
+          "opts"
+        ],
+        "channel": "HOME_CHANNELS.newDoc"
+      },
+      "newSheet": {
+        "kind": "invoke",
+        "params": [
+          "opts"
+        ],
+        "channel": "HOME_CHANNELS.newSheet"
+      },
+      "newSlide": {
+        "kind": "invoke",
+        "params": [
+          "opts"
+        ],
+        "channel": "HOME_CHANNELS.newSlide"
+      },
+      "newMarkdown": {
+        "kind": "invoke",
+        "params": [
+          "opts"
+        ],
+        "channel": "HOME_CHANNELS.newMarkdown"
+      },
+      "newHtml": {
+        "kind": "invoke",
+        "params": [
+          "opts"
+        ],
+        "channel": "HOME_CHANNELS.newHtml"
+      },
+      "newPdf": {
+        "kind": "invoke",
+        "params": [
+          "opts"
+        ],
+        "channel": "HOME_CHANNELS.newPdf"
+      },
+      "removeRecent": {
+        "kind": "invoke",
+        "params": [
+          "paths"
+        ],
+        "channel": "HOME_CHANNELS.removeRecent"
+      },
+      "revealPath": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "HOME_CHANNELS.revealPath"
+      },
+      "renameFile": {
+        "kind": "invoke",
+        "params": [
+          "path",
+          "newName"
+        ],
+        "channel": "HOME_CHANNELS.renameFile"
+      },
+      "duplicateFile": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "HOME_CHANNELS.duplicateFile"
+      },
+      "deleteFiles": {
+        "kind": "invoke",
+        "params": [
+          "paths"
+        ],
+        "channel": "HOME_CHANNELS.deleteFiles"
+      },
+      "folderRoots": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.folderRoots"
+      },
+      "addFolderRoot": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.addFolderRoot"
+      },
+      "dropFolderRoots": {
+        "kind": "invoke",
+        "params": [
+          "paths"
+        ],
+        "channel": "HOME_CHANNELS.dropFolderRoots"
+      },
+      "removeFolderRoot": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "HOME_CHANNELS.removeFolderRoot"
+      },
+      "pathForFile": {
+        "kind": "invoke",
+        "params": [
+          "file"
+        ],
+        "channel": "webUtils.getPathForFile"
+      },
+      "listFolder": {
+        "kind": "invoke",
+        "params": [
+          "dir"
+        ],
+        "channel": "HOME_CHANNELS.listFolder"
+      },
+      "createFolder": {
+        "kind": "invoke",
+        "params": [
+          "parent",
+          "name"
+        ],
+        "channel": "HOME_CHANNELS.createFolder"
+      },
+      "renameFolder": {
+        "kind": "invoke",
+        "params": [
+          "dir",
+          "newName"
+        ],
+        "channel": "HOME_CHANNELS.renameFolder"
+      },
+      "movePaths": {
+        "kind": "invoke",
+        "params": [
+          "paths",
+          "targetDir",
+          "onConflict"
+        ],
+        "channel": "HOME_CHANNELS.movePaths"
+      },
+      "deleteFolder": {
+        "kind": "invoke",
+        "params": [
+          "dir"
+        ],
+        "channel": "HOME_CHANNELS.deleteFolder"
+      },
+      "onFolderChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "HOME_CHANNELS.folderChanged"
+      },
+      "openTrash": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.openTrash"
+      },
+      "getLanguage": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.getLanguage"
+      },
+      "setLanguage": {
+        "kind": "invoke",
+        "params": [
+          "lang"
+        ],
+        "channel": "HOME_CHANNELS.setLanguage"
+      },
+      "getUpdateChannel": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.getUpdateChannel"
+      },
+      "setUpdateChannel": {
+        "kind": "invoke",
+        "params": [
+          "channel"
+        ],
+        "channel": "HOME_CHANNELS.setUpdateChannel"
+      },
+      "accountStatus": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.accountStatus"
+      },
+      "accountLogin": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.accountLogin"
+      },
+      "onAccountLogin": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "HOME_CHANNELS.accountLoginEvent"
+      },
+      "openLoginUrl": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.accountLoginOpenUrl"
+      },
+      "accountLogout": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.accountLogout"
+      },
+      "getAppVersion": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.getAppVersion"
+      },
+      "onboardingSeen": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.onboardingSeen"
+      },
+      "setOnboardingSeen": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.setOnboardingSeen"
+      },
+      "getTheme": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.getTheme"
+      },
+      "setTheme": {
+        "kind": "invoke",
+        "params": [
+          "theme"
+        ],
+        "channel": "HOME_CHANNELS.setTheme"
+      },
+      "getAutoSaveDefault": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.getAutoSaveDefault"
+      },
+      "setAutoSaveDefault": {
+        "kind": "invoke",
+        "params": [
+          "on"
+        ],
+        "channel": "HOME_CHANNELS.setAutoSaveDefault"
+      },
+      "getMcpStatus": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.getMcpStatus"
+      },
+      "setMcpSettings": {
+        "kind": "invoke",
+        "params": [
+          "patch"
+        ],
+        "channel": "HOME_CHANNELS.setMcpSettings"
+      },
+      "getMcpLogs": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.getMcpLogs"
+      },
+      "clearMcpLogs": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.clearMcpLogs"
+      },
+      "openMcpLogFile": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.openMcpLogFile"
+      },
+      "getAnalyticsEnabled": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.getAnalyticsEnabled"
+      },
+      "setAnalyticsEnabled": {
+        "kind": "invoke",
+        "params": [
+          "enabled"
+        ],
+        "channel": "HOME_CHANNELS.setAnalyticsEnabled"
+      },
+      "getAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.getAiPanelPrefs"
+      },
+      "setAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [
+          "patch"
+        ],
+        "channel": "HOME_CHANNELS.setAiPanelPrefs"
+      },
+      "getDefaultSaveDir": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.getDefaultSaveDir"
+      },
+      "pickDefaultSaveDir": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.pickDefaultSaveDir"
+      },
+      "onThemeChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:theme-changed"
+      },
+      "openGenTeam": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.openGenTeam"
+      },
+      "openCreditUsage": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.openCreditUsage"
+      },
+      "openGitHubRepo": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.openGitHubRepo"
+      },
+      "githubStars": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.githubStars"
+      },
+      "starPromptShouldShow": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.starPromptShouldShow"
+      },
+      "starPromptAction": {
+        "kind": "invoke",
+        "params": [
+          "action"
+        ],
+        "channel": "HOME_CHANNELS.starPromptAction"
+      },
+      "cloudProjectsCached": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.cloudProjectsCached"
+      },
+      "cloudProjectsSync": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HOME_CHANNELS.cloudProjects"
+      },
+      "openCloudProject": {
+        "kind": "invoke",
+        "params": [
+          "projectUrl"
+        ],
+        "channel": "HOME_CHANNELS.openCloudProject"
+      },
+      "getAiSettings": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "ai:get-settings"
+      },
+      "setAiSettings": {
+        "kind": "invoke",
+        "params": [
+          "settings"
+        ],
+        "channel": "ai:set-settings"
+      },
+      "getAiProviders": {
+        "kind": "sync",
+        "params": [],
+        "channel": null
+      },
+      "getCodexModels": {
+        "kind": "invoke",
+        "params": [
+          "cliPath"
+        ],
+        "channel": "ai:codex-models"
+      },
+      "getCustomModels": {
+        "kind": "invoke",
+        "params": [
+          "baseUrl",
+          "apiKey"
+        ],
+        "channel": "ai:custom-models"
+      },
+      "testAiSettings": {
+        "kind": "invoke",
+        "params": [
+          "settings"
+        ],
+        "channel": "ai:chat"
+      },
+      "getAiMediaProviders": {
+        "kind": "sync",
+        "params": [],
+        "channel": null
+      },
+      "getAiSearchProviders": {
+        "kind": "sync",
+        "params": [],
+        "channel": null
+      },
+      "testAiSearchSettings": {
+        "kind": "invoke",
+        "params": [
+          "input"
+        ],
+        "channel": "ai:search-test"
+      },
+      "testAiMediaSettings": {
+        "kind": "invoke",
+        "params": [
+          "input"
+        ],
+        "channel": "ai:media-test"
+      }
+    },
+    "aiOfficeIntegrations": {
+      "status": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "INTEGRATIONS_CHANNELS.status"
+      },
+      "installSkill": {
+        "kind": "invoke",
+        "params": [
+          "target"
+        ],
+        "channel": "INTEGRATIONS_CHANNELS.installSkill"
+      },
+      "uninstallSkill": {
+        "kind": "invoke",
+        "params": [
+          "agentId"
+        ],
+        "channel": "INTEGRATIONS_CHANNELS.uninstallSkill"
+      },
+      "pickSkillDir": {
+        "kind": "invoke",
+        "params": [
+          "title"
+        ],
+        "channel": "INTEGRATIONS_CHANNELS.pickSkillDir"
+      },
+      "saveSkillZip": {
+        "kind": "invoke",
+        "params": [
+          "title"
+        ],
+        "channel": "INTEGRATIONS_CHANNELS.saveSkillZip"
+      },
+      "copyText": {
+        "kind": "invoke",
+        "params": [
+          "text"
+        ],
+        "channel": "INTEGRATIONS_CHANNELS.copyText"
+      }
+    },
+    "aiOfficeTabs": {
+      "list": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "TABS_CHANNELS.list"
+      },
+      "activate": {
+        "kind": "invoke",
+        "params": [
+          "id"
+        ],
+        "channel": "TABS_CHANNELS.activate"
+      },
+      "close": {
+        "kind": "invoke",
+        "params": [
+          "id"
+        ],
+        "channel": "TABS_CHANNELS.close"
+      },
+      "showMenu": {
+        "kind": "invoke",
+        "params": [
+          "x",
+          "y"
+        ],
+        "channel": "TABS_CHANNELS.showMenu"
+      },
+      "showNewMenu": {
+        "kind": "invoke",
+        "params": [
+          "x",
+          "y"
+        ],
+        "channel": "TABS_CHANNELS.showNewMenu"
+      },
+      "showTabMenu": {
+        "kind": "invoke",
+        "params": [
+          "id",
+          "x",
+          "y"
+        ],
+        "channel": "TABS_CHANNELS.showTabMenu"
+      },
+      "detach": {
+        "kind": "invoke",
+        "params": [
+          "id"
+        ],
+        "channel": "TABS_CHANNELS.detach"
+      },
+      "showAppMenu": {
+        "kind": "invoke",
+        "params": [
+          "x",
+          "y"
+        ],
+        "channel": "TABS_CHANNELS.showAppMenu"
+      },
+      "reorder": {
+        "kind": "invoke",
+        "params": [
+          "id",
+          "toIndex"
+        ],
+        "channel": "TABS_CHANNELS.reorder"
+      },
+      "onChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "TABS_CHANNELS.changed"
+      },
+      "notifyChromePressed": {
+        "kind": "send",
+        "params": [],
+        "channel": "TABS_CHANNELS.chromePressed"
+      },
+      "onChromePressed": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:chrome-pressed"
+      }
+    }
+  },
+  "docs": {
+    "desktop": {
+      "getLanguage": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "app:get-language"
+      },
+      "onLanguageChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:language-changed"
+      },
+      "getTheme": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "app:get-theme"
+      },
+      "onThemeChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:theme-changed"
+      },
+      "getAutoSaveDefault": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "app:get-auto-save-default"
+      },
+      "onAutoSaveDefaultChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:auto-save-default-changed"
+      },
+      "getAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "app:get-ai-panel-prefs"
+      },
+      "setAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [
+          "patch"
+        ],
+        "channel": "app:set-ai-panel-prefs"
+      },
+      "onAiPanelPrefsChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:ai-panel-prefs-changed"
+      },
+      "onChromePressed": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:chrome-pressed"
+      },
+      "zoteroCommand": {
+        "kind": "invoke",
+        "params": [
+          "command"
+        ],
+        "channel": "zotero:command"
+      },
+      "onZoteroRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "zotero:request"
+      },
+      "respondToZotero": {
+        "kind": "send",
+        "params": [
+          "response"
+        ],
+        "channel": "zotero:response"
+      },
+      "openDocx": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "docs:open"
+      },
+      "openDocxPath": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "docs:open-path"
+      },
+      "convertAltChunkHtml": {
+        "kind": "invoke",
+        "params": [
+          "html"
+        ],
+        "channel": "docs:altchunk-html-to-docx"
+      },
+      "openDocxDecrypt": {
+        "kind": "invoke",
+        "params": [
+          "path",
+          "password"
+        ],
+        "channel": "docs:open-decrypt"
+      },
+      "setDocPassword": {
+        "kind": "invoke",
+        "params": [
+          "filePath",
+          "password"
+        ],
+        "channel": "docs:set-password"
+      },
+      "docPasswordIntentRevision": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "docs:password-intent-revision"
+      },
+      "discardDocPasswordIntents": {
+        "kind": "invoke",
+        "params": [
+          "throughRevision"
+        ],
+        "channel": "docs:discard-password-intents"
+      },
+      "consumePendingOpenDocx": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "docs:consume-pending-open"
+      },
+      "consumeNewBlankDoc": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "docs:consume-new-blank"
+      },
+      "consumeAiDocContent": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "docs:consume-ai-doc-content"
+      },
+      "consumeHeadlessExport": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "docs:consume-headless-export"
+      },
+      "headlessExportDone": {
+        "kind": "send",
+        "params": [
+          "result"
+        ],
+        "channel": "docs:headless-export-done"
+      },
+      "createDocument": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "docs:create-document"
+      },
+      "onOpenDocx": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "docs:opened"
+      },
+      "onRenamedDocx": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "docs:renamed"
+      },
+      "saveDocx": {
+        "kind": "invoke",
+        "params": [
+          "path",
+          "data",
+          "auto?"
+        ],
+        "channel": "docs:save"
+      },
+      "writeRecoveryCopy": {
+        "kind": "invoke",
+        "params": [
+          "path",
+          "data"
+        ],
+        "channel": "docs:write-recovery"
+      },
+      "onTeardown": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "docs:teardown"
+      },
+      "respellKick": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "docs:respell-kick"
+      },
+      "spellDiag": {
+        "kind": "send",
+        "params": [
+          "line"
+        ],
+        "channel": "docs:spell-diag"
+      },
+      "saveDocxAs": {
+        "kind": "invoke",
+        "params": [
+          "defaultName",
+          "data",
+          "sourcePath?"
+        ],
+        "channel": "docs:save-as"
+      },
+      "saveDocxNew": {
+        "kind": "invoke",
+        "params": [
+          "defaultName",
+          "data"
+        ],
+        "channel": "docs:save-new"
+      },
+      "saveDocxTo": {
+        "kind": "invoke",
+        "params": [
+          "path",
+          "data",
+          "overwrite"
+        ],
+        "channel": "docs:save-to"
+      },
+      "onMcpCommand": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "docs:mcp-command"
+      },
+      "reportMcpResult": {
+        "kind": "send",
+        "params": [
+          "result"
+        ],
+        "channel": "docs:mcp-result"
+      },
+      "signalMcpReady": {
+        "kind": "send",
+        "params": [],
+        "channel": "docs:mcp-ready"
+      },
+      "getRecentFiles": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "docs:recent"
+      },
+      "pickImage": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "docs:pick-image"
+      },
+      "fontMetrics": {
+        "kind": "invoke",
+        "params": [
+          "family"
+        ],
+        "channel": "docs:font-metrics"
+      },
+      "print": {
+        "kind": "invoke",
+        "params": [
+          "scale?"
+        ],
+        "channel": "docs:print"
+      },
+      "exportPdf": {
+        "kind": "invoke",
+        "params": [
+          "defaultName",
+          "pageWidthTwips",
+          "pageHeightTwips",
+          "outPath?",
+          "scale?"
+        ],
+        "channel": "docs:export-pdf"
+      },
+      "exportHtml": {
+        "kind": "invoke",
+        "params": [
+          "defaultName",
+          "html",
+          "outPath?"
+        ],
+        "channel": "docs:export-html"
+      },
+      "printPdfBuffer": {
+        "kind": "invoke",
+        "params": [
+          "pageWidthTwips",
+          "pageHeightTwips",
+          "scale?"
+        ],
+        "channel": "docs:print-pdf-buffer"
+      },
+      "saveMergedPdf": {
+        "kind": "invoke",
+        "params": [
+          "defaultName",
+          "base64Parts",
+          "outPath?"
+        ],
+        "channel": "docs:save-merged-pdf"
+      },
+      "pickExportImagesTarget": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "docs:pick-export-images-target"
+      },
+      "takeExportPdf": {
+        "kind": "invoke",
+        "params": [
+          "pdfPath"
+        ],
+        "channel": "docs:take-export-pdf"
+      },
+      "writeExportImage": {
+        "kind": "invoke",
+        "params": [
+          "dir",
+          "fileName",
+          "pngBase64"
+        ],
+        "channel": "docs:write-export-image"
+      },
+      "saveImageAs": {
+        "kind": "invoke",
+        "params": [
+          "src"
+        ],
+        "channel": "docs:save-image-as"
+      },
+      "onViewImage": {
+        "kind": "unknown",
+        "params": [
+          "handler"
+        ],
+        "channel": null
+      },
+      "getAiSettings": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "ai:get-settings"
+      },
+      "setAiSettings": {
+        "kind": "invoke",
+        "params": [
+          "settings"
+        ],
+        "channel": "ai:set-settings"
+      },
+      "aiChat": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "ai:chat"
+      },
+      "aiStream": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "ai:stream"
+      },
+      "aiStreamCancel": {
+        "kind": "invoke",
+        "params": [
+          "requestId"
+        ],
+        "channel": "ai:stream-cancel"
+      },
+      "aiGskStatus": {
+        "kind": "invoke",
+        "params": [
+          "withEmail?"
+        ],
+        "channel": "ai:gsk-status"
+      },
+      "aiGskLogin": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "ai:gsk-login"
+      },
+      "webSearch": {
+        "kind": "invoke",
+        "params": [
+          "query",
+          "maxResults?"
+        ],
+        "channel": "ai:web-search"
+      },
+      "imageSearch": {
+        "kind": "invoke",
+        "params": [
+          "query",
+          "maxResults?"
+        ],
+        "channel": "ai:image-search"
+      },
+      "analyzeMedia": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "docs:analyze-media"
+      },
+      "fetchImage": {
+        "kind": "invoke",
+        "params": [
+          "url"
+        ],
+        "channel": "ai:fetch-image"
+      },
+      "aiGenerateImage": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "docs:ai-generate-image"
+      },
+      "pickAttachments": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "files:pick"
+      },
+      "addAttachmentPaths": {
+        "kind": "invoke",
+        "params": [
+          "paths"
+        ],
+        "channel": "files:add"
+      },
+      "addPastedImage": {
+        "kind": "invoke",
+        "params": [
+          "data",
+          "ext"
+        ],
+        "channel": "files:add-pasted-image"
+      },
+      "copyImageToClipboard": {
+        "kind": "invoke",
+        "params": [
+          "dataUrl",
+          "metaJson?"
+        ],
+        "channel": "docs:copy-image-to-clipboard"
+      },
+      "readAttachment": {
+        "kind": "invoke",
+        "params": [
+          "path",
+          "offset",
+          "maxChars"
+        ],
+        "channel": "files:read"
+      },
+      "readAttachmentImage": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "files:read-image"
+      },
+      "getPathForFile": {
+        "kind": "invoke",
+        "params": [
+          "file"
+        ],
+        "channel": "webUtils.getPathForFile"
+      },
+      "openNewTab": {
+        "kind": "invoke",
+        "params": [
+          "openPath?"
+        ],
+        "channel": "win:new"
+      },
+      "listDocsTabs": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "win:list"
+      },
+      "focusDocsTab": {
+        "kind": "invoke",
+        "params": [
+          "id"
+        ],
+        "channel": "win:focus"
+      },
+      "onAiStream": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "ai:stream-chunk"
+      },
+      "onMenuCommand": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "menu:command"
+      },
+      "onCloseCheck": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "docs:close-check"
+      },
+      "reportViewMenuState": {
+        "kind": "send",
+        "params": [
+          "state"
+        ],
+        "channel": "docs:view-menu-state"
+      },
+      "reportCloseCheck": {
+        "kind": "send",
+        "params": [
+          "state"
+        ],
+        "channel": "docs:close-check-result"
+      },
+      "onCloseSaveRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "docs:close-save-request"
+      },
+      "reportCloseSaveResult": {
+        "kind": "send",
+        "params": [
+          "ok"
+        ],
+        "channel": "docs:close-save-result"
+      }
+    },
+    "projectApi": {
+      "resolveChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:resolveChat"
+      },
+      "appendChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:appendChat"
+      },
+      "loadChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:loadChat"
+      },
+      "rebindChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:rebindChat"
+      }
+    }
+  },
+  "sheets": {
+    "desktopApi": {
+      "getLanguage": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "app:get-language"
+      },
+      "onLanguageChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:language-changed"
+      },
+      "getTheme": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "app:get-theme"
+      },
+      "onThemeChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:theme-changed"
+      },
+      "getAutoSaveDefault": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "app:get-auto-save-default"
+      },
+      "onAutoSaveDefaultChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:auto-save-default-changed"
+      },
+      "getAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "app:get-ai-panel-prefs"
+      },
+      "setAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [
+          "patch"
+        ],
+        "channel": "app:set-ai-panel-prefs"
+      },
+      "onAiPanelPrefsChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:ai-panel-prefs-changed"
+      },
+      "onChromePressed": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:chrome-pressed"
+      },
+      "selectWorkbook": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "IPC_CHANNELS.selectWorkbook"
+      },
+      "selectWorkbooksForMerge": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "IPC_CHANNELS.selectWorkbooksForMerge"
+      },
+      "openWorkbooksForMerge": {
+        "kind": "invoke",
+        "params": [
+          "paths"
+        ],
+        "channel": "IPC_CHANNELS.openWorkbooksForMerge"
+      },
+      "readWorkbookRange": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.readWorkbookRange"
+      },
+      "readWorkbookFormulas": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.readWorkbookFormulas"
+      },
+      "recalcWorkbook": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.recalcWorkbook"
+      },
+      "readWorkbookMedia": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.readWorkbookMedia"
+      },
+      "readLocalImage": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.readLocalImage"
+      },
+      "captureScreenSources": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "IPC_CHANNELS.captureScreenSources"
+      },
+      "captureScreenSource": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.captureScreenSource"
+      },
+      "readPivotDefinition": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.readPivotDefinition"
+      },
+      "saveWorkbookEdits": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.saveWorkbook"
+      },
+      "beginSaveEditsTransfer": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.saveEditsBegin"
+      },
+      "sendSaveEditsChunk": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.saveEditsChunk"
+      },
+      "abortSaveEditsTransfer": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.saveEditsAbort"
+      },
+      "writeWorkbookRecovery": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.writeWorkbookRecovery"
+      },
+      "autoRenameWorkbook": {
+        "kind": "invoke",
+        "params": [
+          "sessionId",
+          "baseName"
+        ],
+        "channel": "IPC_CHANNELS.autoRenameWorkbook"
+      },
+      "exportPdf": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.exportPdf"
+      },
+      "printWorkbook": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.printWorkbook"
+      },
+      "exportCsv": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.exportCsv"
+      },
+      "confirmCsvSave": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "IPC_CHANNELS.csvSaveConfirm"
+      },
+      "createDocument": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.createDocument"
+      },
+      "closeWorkbook": {
+        "kind": "invoke",
+        "params": [
+          "sessionId"
+        ],
+        "channel": "IPC_CHANNELS.closeWorkbook"
+      },
+      "openExternal": {
+        "kind": "invoke",
+        "params": [
+          "url"
+        ],
+        "channel": "IPC_CHANNELS.openExternal"
+      },
+      "onMenuAction": {
+        "kind": "event",
+        "params": [
+          "callback"
+        ],
+        "channel": "IPC_CHANNELS.menuAction"
+      },
+      "onWorkbookRenamed": {
+        "kind": "event",
+        "params": [
+          "callback"
+        ],
+        "channel": "IPC_CHANNELS.workbookRenamed"
+      },
+      "notifyPendingEdits": {
+        "kind": "send",
+        "params": [
+          "count"
+        ],
+        "channel": "IPC_CHANNELS.pendingEditsChanged"
+      },
+      "onCloseSaveRequest": {
+        "kind": "event",
+        "params": [
+          "callback"
+        ],
+        "channel": "IPC_CHANNELS.closeSaveRequest"
+      },
+      "reportCloseSaveResult": {
+        "kind": "send",
+        "params": [
+          "ok"
+        ],
+        "channel": "IPC_CHANNELS.closeSaveResult"
+      },
+      "onRecoveryPrompt": {
+        "kind": "event",
+        "params": [
+          "callback"
+        ],
+        "channel": "IPC_CHANNELS.recoveryPrompt"
+      },
+      "replyRecoveryPrompt": {
+        "kind": "send",
+        "params": [
+          "restore"
+        ],
+        "channel": "IPC_CHANNELS.recoveryPromptReply"
+      },
+      "getAiSettings": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "IPC_CHANNELS.aiGetSettings"
+      },
+      "setAiSettings": {
+        "kind": "invoke",
+        "params": [
+          "settings"
+        ],
+        "channel": "IPC_CHANNELS.aiSetSettings"
+      },
+      "aiChat": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.aiChat"
+      },
+      "aiStream": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "IPC_CHANNELS.aiStream"
+      },
+      "aiStreamCancel": {
+        "kind": "invoke",
+        "params": [
+          "requestId"
+        ],
+        "channel": "IPC_CHANNELS.aiStreamCancel"
+      },
+      "aiGskStatus": {
+        "kind": "invoke",
+        "params": [
+          "withEmail"
+        ],
+        "channel": "IPC_CHANNELS.aiGskStatus"
+      },
+      "aiGskLogin": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "IPC_CHANNELS.aiGskLogin"
+      },
+      "webSearch": {
+        "kind": "invoke",
+        "params": [
+          "query",
+          "maxResults"
+        ],
+        "channel": "ai:web-search"
+      },
+      "imageSearch": {
+        "kind": "invoke",
+        "params": [
+          "query",
+          "maxResults"
+        ],
+        "channel": "IPC_CHANNELS.aiImageSearch"
+      },
+      "generateImage": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "IPC_CHANNELS.aiGenerateImage"
+      },
+      "fetchImage": {
+        "kind": "invoke",
+        "params": [
+          "url"
+        ],
+        "channel": "IPC_CHANNELS.aiFetchImage"
+      },
+      "onAiStream": {
+        "kind": "event",
+        "params": [
+          "callback"
+        ],
+        "channel": "IPC_CHANNELS.aiStreamChunk"
+      },
+      "consumeNewBlankWorkbook": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "sheets:consume-new-blank"
+      },
+      "onMcpCommand": {
+        "kind": "event",
+        "params": [
+          "callback"
+        ],
+        "channel": "IPC_CHANNELS.mcpCommand"
+      },
+      "reportMcpResult": {
+        "kind": "send",
+        "params": [
+          "result"
+        ],
+        "channel": "IPC_CHANNELS.mcpResult"
+      },
+      "signalMcpReady": {
+        "kind": "send",
+        "params": [],
+        "channel": "IPC_CHANNELS.mcpReady"
+      },
+      "hasQueuedWorkbook": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "sheets:has-queued-workbook"
+      },
+      "consumeHeadlessExport": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "sheets:consume-headless-export"
+      },
+      "headlessExportDone": {
+        "kind": "send",
+        "params": [
+          "result"
+        ],
+        "channel": "sheets:headless-export-done"
+      },
+      "pickAttachments": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "IPC_CHANNELS.filesPick"
+      },
+      "addAttachmentPaths": {
+        "kind": "invoke",
+        "params": [
+          "paths"
+        ],
+        "channel": "IPC_CHANNELS.filesAdd"
+      },
+      "addPastedImage": {
+        "kind": "invoke",
+        "params": [
+          "data",
+          "ext"
+        ],
+        "channel": "IPC_CHANNELS.filesAddPastedImage"
+      },
+      "readAttachment": {
+        "kind": "invoke",
+        "params": [
+          "path",
+          "offset",
+          "maxChars"
+        ],
+        "channel": "IPC_CHANNELS.filesRead"
+      },
+      "readAttachmentImage": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "IPC_CHANNELS.filesReadImage"
+      },
+      "getPathForFile": {
+        "kind": "invoke",
+        "params": [
+          "file"
+        ],
+        "channel": "webUtils.getPathForFile"
+      }
+    },
+    "projectApi": {
+      "resolveChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:resolveChat"
+      },
+      "appendChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:appendChat"
+      },
+      "loadChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:loadChat"
+      },
+      "rebindChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:rebindChat"
+      }
+    },
+    "__genofficeDebugHooks": {
+      "_error": "未找到对象 true"
+    }
+  },
+  "slides": {
+    "slidesApi": {
+      "getLanguage": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "app:get-language"
+      },
+      "onLanguageChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:language-changed"
+      },
+      "getTheme": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "app:get-theme"
+      },
+      "onThemeChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:theme-changed"
+      },
+      "getAutoSaveDefault": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "app:get-auto-save-default"
+      },
+      "onAutoSaveDefaultChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:auto-save-default-changed"
+      },
+      "getAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "app:get-ai-panel-prefs"
+      },
+      "setAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [
+          "patch"
+        ],
+        "channel": "app:set-ai-panel-prefs"
+      },
+      "onAiPanelPrefsChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:ai-panel-prefs-changed"
+      },
+      "onChromePressed": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:chrome-pressed"
+      },
+      "setShowFullScreen": {
+        "kind": "invoke",
+        "params": [
+          "on"
+        ],
+        "channel": "slides:show-fullscreen"
+      },
+      "privateFontFaces": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:private-font-faces"
+      },
+      "privateFontData": {
+        "kind": "invoke",
+        "params": [
+          "id"
+        ],
+        "channel": "slides:private-font-data"
+      },
+      "fontCatalog": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:font-catalog"
+      },
+      "fontDownload": {
+        "kind": "invoke",
+        "params": [
+          "family"
+        ],
+        "channel": "slides:font-download"
+      },
+      "fontInstallLocal": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:font-install-local"
+      },
+      "fontMissing": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:font-missing"
+      },
+      "onFontsChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "slides:fonts-changed"
+      },
+      "openPptx": {
+        "kind": "invoke",
+        "params": [
+          "fitWidthPx"
+        ],
+        "channel": "slides:open"
+      },
+      "openPptxPath": {
+        "kind": "invoke",
+        "params": [
+          "path",
+          "fitWidthPx"
+        ],
+        "channel": "slides:open-path"
+      },
+      "consumePendingOpen": {
+        "kind": "invoke",
+        "params": [
+          "fitWidthPx"
+        ],
+        "channel": "slides:consume-pending-open"
+      },
+      "consumeHeadlessExport": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:consume-headless-export"
+      },
+      "headlessExportDone": {
+        "kind": "send",
+        "params": [
+          "result"
+        ],
+        "channel": "slides:headless-export-done"
+      },
+      "newBlank": {
+        "kind": "invoke",
+        "params": [
+          "fitWidthPx"
+        ],
+        "channel": "slides:new-blank"
+      },
+      "landGeneratedPages": {
+        "kind": "invoke",
+        "params": [
+          "pageMarkers",
+          "fitWidthPx",
+          "mode?",
+          "atIndex?",
+          "deckName?"
+        ],
+        "channel": "slides:land-generated-pages"
+      },
+      "cloudGenStatus": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:cloud-gen-status"
+      },
+      "cloudGeneratePage": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:cloud-page-generate"
+      },
+      "localGeneratePage": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:local-page-generate"
+      },
+      "editText": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-text"
+      },
+      "setElementFont": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-element-font"
+      },
+      "setElementParagraphFormat": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-element-paragraph-format"
+      },
+      "findReplace": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:find-replace"
+      },
+      "setSlideLayout": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-slide-layout"
+      },
+      "setSlideSize": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-slide-size"
+      },
+      "getSlideSize": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:get-slide-size"
+      },
+      "editTransform": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-transform"
+      },
+      "editTransformMulti": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-transform-multi"
+      },
+      "editConnectorEndpoints": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-connector-endpoints"
+      },
+      "editPictureSrcRect": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-picture-src-rect"
+      },
+      "editPictureOpacity": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-picture-opacity"
+      },
+      "editImageFill": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-image-fill"
+      },
+      "changeShape": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:change-shape"
+      },
+      "setShapeAdjust": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-shape-adjust"
+      },
+      "setShapeGeometry": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-shape-geometry"
+      },
+      "setTextAnchor": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-text-anchor"
+      },
+      "setTextBodyProps": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-text-body-props"
+      },
+      "setEffects": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-effects"
+      },
+      "clipboardExternal": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:clipboard-external"
+      },
+      "groupElements": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:group-elements"
+      },
+      "ungroupElement": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:ungroup-element"
+      },
+      "batchEditTransform": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:batch-edit-transform"
+      },
+      "getRenderSlides": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:get-render-slides"
+      },
+      "addElement": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:add-element"
+      },
+      "deleteElement": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:delete-element"
+      },
+      "deleteElements": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:delete-elements"
+      },
+      "addSlide": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:add-slide"
+      },
+      "addBlankSlide": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:add-blank-slide"
+      },
+      "addSlideWithLayout": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:add-slide-with-layout"
+      },
+      "getLayouts": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:get-layouts"
+      },
+      "masterEnter": {
+        "kind": "invoke",
+        "params": [
+          "fitWidthPx"
+        ],
+        "channel": "slides:master-enter"
+      },
+      "masterOpen": {
+        "kind": "invoke",
+        "params": [
+          "partPath"
+        ],
+        "channel": "slides:master-open"
+      },
+      "masterClose": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:master-close"
+      },
+      "masterEditText": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:master-edit-text"
+      },
+      "masterEditTransform": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:master-edit-transform"
+      },
+      "masterEditFill": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:master-edit-fill"
+      },
+      "masterEditStroke": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:master-edit-stroke"
+      },
+      "masterDeleteElement": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:master-delete-element"
+      },
+      "editFill": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-fill"
+      },
+      "editStroke": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-stroke"
+      },
+      "flipElements": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:flip-elements"
+      },
+      "editBackground": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-background"
+      },
+      "pickPictureFile": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:pick-picture-file"
+      },
+      "insertImage": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex",
+          "fitWidthPx"
+        ],
+        "channel": "slides:insert-image"
+      },
+      "copySlides": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:copy-slides"
+      },
+      "pasteSlide": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:paste-slide"
+      },
+      "repasteSlide": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:repaste-slide"
+      },
+      "hasSlideClipboard": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:has-slide-clipboard"
+      },
+      "clipboardProbe": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:clipboard-probe"
+      },
+      "deleteSlide": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex"
+        ],
+        "channel": "slides:delete-slide"
+      },
+      "deleteSlides": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:delete-slides"
+      },
+      "duplicateSlides": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:duplicate-slides"
+      },
+      "reorderElement": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:reorder-element"
+      },
+      "editTableCell": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-table-cell"
+      },
+      "tableStructure": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:table-structure"
+      },
+      "tableMerge": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:table-merge"
+      },
+      "setTableColWidth": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-table-col-width"
+      },
+      "setTableRowHeight": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-table-row-height"
+      },
+      "setTableCellAnchor": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-table-cell-anchor"
+      },
+      "editTableStyle": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-table-style"
+      },
+      "editChart": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:edit-chart"
+      },
+      "getChartColorSchemes": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:chart-color-schemes"
+      },
+      "getChartData": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex",
+          "sourceId"
+        ],
+        "channel": "slides:get-chart-data"
+      },
+      "copyElements": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:copy-elements"
+      },
+      "copyElementsImage": {
+        "kind": "invoke",
+        "params": [
+          "clipboardToken",
+          "pngBase64"
+        ],
+        "channel": "slides:copy-elements-image"
+      },
+      "pasteElements": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:paste-elements"
+      },
+      "duplicateElements": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:duplicate-elements"
+      },
+      "addTable": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:add-table"
+      },
+      "addInk": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:add-ink"
+      },
+      "addChart": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:add-chart"
+      },
+      "addSmartArt": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:add-smartart"
+      },
+      "addImageBytes": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:add-image-bytes"
+      },
+      "replacePictureBytes": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:replace-picture-bytes"
+      },
+      "insertMedia": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex",
+          "kind",
+          "fitWidthPx"
+        ],
+        "channel": "slides:insert-media"
+      },
+      "addMediaBytes": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:add-media-bytes"
+      },
+      "getMediaData": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex",
+          "sourceId"
+        ],
+        "channel": "slides:media-data"
+      },
+      "insertModel3d": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex",
+          "fitWidthPx"
+        ],
+        "channel": "slides:insert-model3d"
+      },
+      "setLink": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-link"
+      },
+      "getLink": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex",
+          "sourceId"
+        ],
+        "channel": "slides:get-link"
+      },
+      "getSlideLinks": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex"
+        ],
+        "channel": "slides:get-slide-links"
+      },
+      "getRunLinks": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex"
+        ],
+        "channel": "slides:get-run-links"
+      },
+      "applyHeaderFooter": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:apply-header-footer"
+      },
+      "getHeaderFooter": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex"
+        ],
+        "channel": "slides:get-header-footer"
+      },
+      "applyTheme": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:apply-theme"
+      },
+      "setTransition": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-transition"
+      },
+      "getTransition": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex"
+        ],
+        "channel": "slides:get-transition"
+      },
+      "setAdvanceTimes": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-advance-times"
+      },
+      "getAnimations": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex"
+        ],
+        "channel": "slides:get-animations"
+      },
+      "getShapeKeys": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex"
+        ],
+        "channel": "slides:get-shape-keys"
+      },
+      "setAnimations": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-animations"
+      },
+      "setSlideHidden": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-hidden"
+      },
+      "setSlidesHidden": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-slides-hidden"
+      },
+      "getSections": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:get-sections"
+      },
+      "setSections": {
+        "kind": "invoke",
+        "params": [
+          "sections"
+        ],
+        "channel": "slides:set-sections"
+      },
+      "addSection": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:add-section"
+      },
+      "renameSection": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:rename-section"
+      },
+      "removeSection": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:remove-section"
+      },
+      "removeSectionSlides": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:remove-section-slides"
+      },
+      "moveSection": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:move-section"
+      },
+      "moveSlide": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:move-slide"
+      },
+      "moveSlides": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:move-slides"
+      },
+      "getNotes": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex"
+        ],
+        "channel": "slides:get-notes"
+      },
+      "setNotes": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:set-notes"
+      },
+      "getComments": {
+        "kind": "invoke",
+        "params": [
+          "slideIndex"
+        ],
+        "channel": "slides:get-comments"
+      },
+      "addComment": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:add-comment"
+      },
+      "deleteComment": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:delete-comment"
+      },
+      "nativeClipboard": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:native-clipboard"
+      },
+      "beginHistoryBatch": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:history-batch-begin"
+      },
+      "endHistoryBatch": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:history-batch-end"
+      },
+      "applyEditScript": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:apply-edit-script"
+      },
+      "applyTxn": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:apply-txn"
+      },
+      "aiSnapshotRestore": {
+        "kind": "invoke",
+        "params": [
+          "id"
+        ],
+        "channel": "slides:ai-snapshot-restore"
+      },
+      "undo": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:undo"
+      },
+      "redo": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:redo"
+      },
+      "pickExportDir": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:pick-export-dir"
+      },
+      "exportImages": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:export-images"
+      },
+      "pickExportPdfPath": {
+        "kind": "invoke",
+        "params": [
+          "defaultName"
+        ],
+        "channel": "slides:pick-export-pdf-path"
+      },
+      "savePicture": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:save-picture"
+      },
+      "exportPdf": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:export-pdf"
+      },
+      "printSlides": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "slides:print"
+      },
+      "save": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:save"
+      },
+      "saveAs": {
+        "kind": "invoke",
+        "params": [
+          "defaultName"
+        ],
+        "channel": "slides:save-as"
+      },
+      "onCloseSaveRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "slides:close-save-request"
+      },
+      "onHistoryChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "slides:history-changed"
+      },
+      "onDeckChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "slides:deck-changed"
+      },
+      "reportCloseSaveResult": {
+        "kind": "send",
+        "params": [
+          "ok"
+        ],
+        "channel": "slides:close-save-result"
+      },
+      "setAutoSavePref": {
+        "kind": "send",
+        "params": [
+          "on"
+        ],
+        "channel": "slides:autosave-pref"
+      },
+      "isDirty": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:is-dirty"
+      },
+      "getRecentFiles": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:recent"
+      },
+      "onMenuCommand": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "slides:menu"
+      },
+      "onOpened": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "slides:opened"
+      },
+      "onRenamed": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "slides:renamed"
+      },
+      "getAiSettings": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "ai:get-settings"
+      },
+      "setAiSettings": {
+        "kind": "invoke",
+        "params": [
+          "settings"
+        ],
+        "channel": "ai:set-settings"
+      },
+      "aiStream": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "ai:stream"
+      },
+      "aiStreamCancel": {
+        "kind": "invoke",
+        "params": [
+          "requestId"
+        ],
+        "channel": "ai:stream-cancel"
+      },
+      "aiGskStatus": {
+        "kind": "invoke",
+        "params": [
+          "withEmail?"
+        ],
+        "channel": "ai:gsk-status"
+      },
+      "aiGskLogin": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "ai:gsk-login"
+      },
+      "aiLogRunFailure": {
+        "kind": "invoke",
+        "params": [
+          "entry"
+        ],
+        "channel": "ai:log-run-failure"
+      },
+      "webSearch": {
+        "kind": "invoke",
+        "params": [
+          "query",
+          "maxResults?"
+        ],
+        "channel": "ai:web-search"
+      },
+      "imageSearch": {
+        "kind": "invoke",
+        "params": [
+          "query",
+          "maxResults?"
+        ],
+        "channel": "ai:image-search"
+      },
+      "insertImageUrl": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "ai:insert-image-url"
+      },
+      "replacePictureUrl": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "ai:replace-picture-url"
+      },
+      "generateImage": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "ai:generate-image"
+      },
+      "analyzeMedia": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "ai:analyze-media"
+      },
+      "gskStatus": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "ai:gsk-status"
+      },
+      "onAiStream": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "ai:stream-chunk"
+      },
+      "saveStyleSidecar": {
+        "kind": "invoke",
+        "params": [
+          "data"
+        ],
+        "channel": "ai:save-sidecar"
+      },
+      "saveStyleTemplate": {
+        "kind": "invoke",
+        "params": [
+          "name",
+          "data"
+        ],
+        "channel": "ai:save-style-template"
+      },
+      "listStyleTemplates": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "ai:list-style-templates"
+      },
+      "loadStyleTemplate": {
+        "kind": "invoke",
+        "params": [
+          "name"
+        ],
+        "channel": "ai:load-style-template"
+      },
+      "presenterStart": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:presenter-start"
+      },
+      "presenterSync": {
+        "kind": "send",
+        "params": [
+          "state"
+        ],
+        "channel": "slides:presenter-sync"
+      },
+      "presenterInk": {
+        "kind": "send",
+        "params": [
+          "ev"
+        ],
+        "channel": "slides:presenter-ink"
+      },
+      "presenterSwap": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:presenter-swap"
+      },
+      "presenterEnd": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:presenter-end"
+      },
+      "audienceReady": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:audience-ready"
+      },
+      "audienceNav": {
+        "kind": "send",
+        "params": [
+          "action"
+        ],
+        "channel": "slides:audience-nav"
+      },
+      "onShowSync": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "slides:show-sync"
+      },
+      "onShowInk": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "slides:show-ink"
+      },
+      "onAudienceNav": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "slides:audience-nav"
+      }
+    },
+    "desktop": {
+      "pickAttachments": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "slides:files-pick"
+      },
+      "addAttachmentPaths": {
+        "kind": "invoke",
+        "params": [
+          "paths"
+        ],
+        "channel": "slides:files-add"
+      },
+      "addPastedImage": {
+        "kind": "invoke",
+        "params": [
+          "data",
+          "ext"
+        ],
+        "channel": "slides:files-add-pasted-image"
+      },
+      "readAttachment": {
+        "kind": "invoke",
+        "params": [
+          "path",
+          "offset",
+          "maxChars"
+        ],
+        "channel": "slides:files-read"
+      },
+      "readAttachmentImage": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "slides:files-read-image"
+      },
+      "getPathForFile": {
+        "kind": "invoke",
+        "params": [
+          "file"
+        ],
+        "channel": "webUtils.getPathForFile"
+      }
+    },
+    "projectApi": {
+      "resolveChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:resolveChat"
+      },
+      "appendChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:appendChat"
+      },
+      "loadChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:loadChat"
+      },
+      "rebindChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:rebindChat"
+      }
+    }
+  },
+  "markdown": {
+    "markdownApi": {
+      "consumePending": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "MARKDOWN_CHANNELS.consumePending"
+      },
+      "consumeHeadlessExport": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "MARKDOWN_CHANNELS.consumeHeadlessExport"
+      },
+      "headlessExportDone": {
+        "kind": "send",
+        "params": [
+          "result"
+        ],
+        "channel": "MARKDOWN_CHANNELS.headlessExportDone"
+      },
+      "readFile": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "MARKDOWN_CHANNELS.readFile"
+      },
+      "save": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "MARKDOWN_CHANNELS.save"
+      },
+      "setDirty": {
+        "kind": "send",
+        "params": [
+          "dirty"
+        ],
+        "channel": "MARKDOWN_CHANNELS.dirtyChanged"
+      },
+      "onSaveRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "MARKDOWN_CHANNELS.saveRequest"
+      },
+      "onCloseSaveRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "MARKDOWN_CHANNELS.closeSaveRequest"
+      },
+      "sendCloseSaveResult": {
+        "kind": "send",
+        "params": [
+          "ok"
+        ],
+        "channel": "MARKDOWN_CHANNELS.closeSaveResult"
+      },
+      "sendSaveRequestAck": {
+        "kind": "send",
+        "params": [
+          "ok"
+        ],
+        "channel": "MARKDOWN_CHANNELS.saveRequestAck"
+      },
+      "onReadTextRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "MARKDOWN_CHANNELS.readTextRequest"
+      },
+      "sendReadTextResult": {
+        "kind": "send",
+        "params": [
+          "result"
+        ],
+        "channel": "MARKDOWN_CHANNELS.readTextResult"
+      },
+      "onFileRenamed": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "MARKDOWN_CHANNELS.fileRenamed"
+      },
+      "pickImage": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "MARKDOWN_CHANNELS.pickImage"
+      },
+      "saveImage": {
+        "kind": "invoke",
+        "params": [
+          "data"
+        ],
+        "channel": "MARKDOWN_CHANNELS.saveImage"
+      },
+      "readImage": {
+        "kind": "invoke",
+        "params": [
+          "src"
+        ],
+        "channel": "MARKDOWN_CHANNELS.readImage"
+      },
+      "saveImageAs": {
+        "kind": "invoke",
+        "params": [
+          "src"
+        ],
+        "channel": "MARKDOWN_CHANNELS.saveImageAs"
+      },
+      "onViewImage": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "MARKDOWN_CHANNELS.viewImage"
+      },
+      "onExportRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "MARKDOWN_CHANNELS.exportRequest"
+      },
+      "onPrintRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "MARKDOWN_CHANNELS.printRequest"
+      },
+      "exportDocx": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "MARKDOWN_CHANNELS.exportDocx"
+      },
+      "exportPdf": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "MARKDOWN_CHANNELS.exportPdf"
+      },
+      "prepareImageExport": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "MARKDOWN_CHANNELS.prepareImageExport"
+      },
+      "writeExportImage": {
+        "kind": "invoke",
+        "params": [
+          "id",
+          "page",
+          "base64"
+        ],
+        "channel": "MARKDOWN_CHANNELS.writeExportImage"
+      },
+      "finishImageExport": {
+        "kind": "invoke",
+        "params": [
+          "id",
+          "success"
+        ],
+        "channel": "MARKDOWN_CHANNELS.finishImageExport"
+      },
+      "getLanguage": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "MARKDOWN_CHANNELS.getLanguage"
+      },
+      "onLanguageChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "MARKDOWN_CHANNELS.languageChanged"
+      },
+      "getTheme": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "MARKDOWN_CHANNELS.getTheme"
+      },
+      "onThemeChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "MARKDOWN_CHANNELS.themeChanged"
+      },
+      "getAutoSaveDefault": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "MARKDOWN_CHANNELS.getAutoSaveDefault"
+      },
+      "onAutoSaveDefaultChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "MARKDOWN_CHANNELS.autoSaveDefaultChanged"
+      },
+      "getAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "MARKDOWN_CHANNELS.getAiPanelPrefs"
+      },
+      "setAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [
+          "patch"
+        ],
+        "channel": "app:set-ai-panel-prefs"
+      },
+      "onAiPanelPrefsChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "MARKDOWN_CHANNELS.aiPanelPrefsChanged"
+      },
+      "onChromePressed": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:chrome-pressed"
+      },
+      "getAiSettings": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "AI_CHANNELS.getSettings"
+      },
+      "aiGskStatus": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "AI_CHANNELS.gskStatus"
+      },
+      "aiStream": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "AI_CHANNELS.stream"
+      },
+      "aiStreamCancel": {
+        "kind": "invoke",
+        "params": [
+          "requestId"
+        ],
+        "channel": "AI_CHANNELS.streamCancel"
+      },
+      "onAiStream": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "AI_CHANNELS.streamChunk"
+      },
+      "webSearch": {
+        "kind": "invoke",
+        "params": [
+          "query",
+          "maxResults"
+        ],
+        "channel": "AI_CHANNELS.webSearch"
+      },
+      "imageSearch": {
+        "kind": "invoke",
+        "params": [
+          "query",
+          "maxResults"
+        ],
+        "channel": "AI_CHANNELS.imageSearch"
+      },
+      "fetchImage": {
+        "kind": "invoke",
+        "params": [
+          "url"
+        ],
+        "channel": "AI_CHANNELS.fetchImage"
+      },
+      "aiGenerateImage": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "MARKDOWN_CHANNELS.aiGenerateImage"
+      }
+    },
+    "projectApi": {
+      "resolveChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:resolveChat"
+      },
+      "appendChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:appendChat"
+      },
+      "loadChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:loadChat"
+      },
+      "rebindChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:rebindChat"
+      }
+    }
+  },
+  "pdf": {
+    "pdfApi": {
+      "consumePending": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "PDF_CHANNELS.consumePending"
+      },
+      "readFile": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "PDF_CHANNELS.readFile"
+      },
+      "save": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.save"
+      },
+      "requestRedactionCopy": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "PDF_CHANNELS.requestRedactionCopy"
+      },
+      "autoRename": {
+        "kind": "invoke",
+        "params": [
+          "path",
+          "baseName"
+        ],
+        "channel": "PDF_CHANNELS.autoRename"
+      },
+      "isUntitled": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "PDF_CHANNELS.isUntitled"
+      },
+      "validateTextEdits": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.validateTextEdits"
+      },
+      "listEditFonts": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "PDF_CHANNELS.listEditFonts"
+      },
+      "canDrawText": {
+        "kind": "invoke",
+        "params": [
+          "text",
+          "font",
+          "bold",
+          "italic"
+        ],
+        "channel": "PDF_CHANNELS.canDrawText"
+      },
+      "listPageImages": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "PDF_CHANNELS.listPageImages"
+      },
+      "listStaticFormFills": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "PDF_CHANNELS.listStaticFormFills"
+      },
+      "ocrPage": {
+        "kind": "invoke",
+        "params": [
+          "png"
+        ],
+        "channel": "PDF_CHANNELS.ocrPage"
+      },
+      "pageImagePng": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.pageImagePng"
+      },
+      "pagePreviewPng": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.pagePreviewPng"
+      },
+      "extractPages": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.extractPages"
+      },
+      "insertPdf": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.insertPdf"
+      },
+      "insertBlankPage": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.insertBlankPage"
+      },
+      "splitPdf": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.splitPdf"
+      },
+      "mergePdf": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.mergePdf"
+      },
+      "mergePages": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.mergePages"
+      },
+      "replacePages": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.replacePages"
+      },
+      "setPageSize": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.setPageSize"
+      },
+      "splitPages": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.splitPages"
+      },
+      "cropPages": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.cropPages"
+      },
+      "exportImages": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.exportImages"
+      },
+      "convertOffice": {
+        "kind": "invoke",
+        "params": [
+          "format",
+          "sourcePath"
+        ],
+        "channel": "PDF_CHANNELS.convertOffice"
+      },
+      "createDocument": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "PDF_CHANNELS.createDocument"
+      },
+      "imageSearch": {
+        "kind": "invoke",
+        "params": [
+          "query",
+          "maxResults"
+        ],
+        "channel": "AI_CHANNELS.imageSearch"
+      },
+      "fetchImage": {
+        "kind": "invoke",
+        "params": [
+          "url"
+        ],
+        "channel": "AI_CHANNELS.fetchImage"
+      },
+      "generateImage": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "PDF_CHANNELS.generateImage"
+      },
+      "listSavedSignatures": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "PDF_CHANNELS.listSignatures"
+      },
+      "addSavedSignature": {
+        "kind": "invoke",
+        "params": [
+          "data"
+        ],
+        "channel": "PDF_CHANNELS.addSignature"
+      },
+      "removeSavedSignature": {
+        "kind": "invoke",
+        "params": [
+          "id"
+        ],
+        "channel": "PDF_CHANNELS.removeSignature"
+      },
+      "getUsername": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "PDF_CHANNELS.getUsername"
+      },
+      "setDirty": {
+        "kind": "send",
+        "params": [
+          "dirty"
+        ],
+        "channel": "PDF_CHANNELS.dirtyChanged"
+      },
+      "onCloseSaveRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "PDF_CHANNELS.closeSaveRequest"
+      },
+      "sendCloseSaveResult": {
+        "kind": "send",
+        "params": [
+          "ok"
+        ],
+        "channel": "PDF_CHANNELS.closeSaveResult"
+      },
+      "onSaveAsRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "PDF_CHANNELS.saveAsRequest"
+      },
+      "sendSaveAsResult": {
+        "kind": "send",
+        "params": [
+          "ok"
+        ],
+        "channel": "PDF_CHANNELS.saveAsResult"
+      },
+      "onSaveAsFlow": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "PDF_CHANNELS.saveAsFlow"
+      },
+      "onPrintRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "PDF_CHANNELS.printRequest"
+      },
+      "onFileRenamed": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "PDF_CHANNELS.fileRenamed"
+      },
+      "getLanguage": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "PDF_CHANNELS.getLanguage"
+      },
+      "onLanguageChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "PDF_CHANNELS.languageChanged"
+      },
+      "getTheme": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "PDF_CHANNELS.getTheme"
+      },
+      "onThemeChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "PDF_CHANNELS.themeChanged"
+      },
+      "getAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "PDF_CHANNELS.getAiPanelPrefs"
+      },
+      "setAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [
+          "patch"
+        ],
+        "channel": "app:set-ai-panel-prefs"
+      },
+      "onAiPanelPrefsChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "PDF_CHANNELS.aiPanelPrefsChanged"
+      },
+      "onChromePressed": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:chrome-pressed"
+      },
+      "getAiSettings": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "AI_CHANNELS.getSettings"
+      },
+      "gskStatus": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "AI_CHANNELS.gskStatus"
+      },
+      "aiStream": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "AI_CHANNELS.stream"
+      },
+      "aiStreamCancel": {
+        "kind": "invoke",
+        "params": [
+          "requestId"
+        ],
+        "channel": "AI_CHANNELS.streamCancel"
+      },
+      "onAiStream": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "AI_CHANNELS.streamChunk"
+      }
+    },
+    "projectApi": {
+      "resolveChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:resolveChat"
+      },
+      "appendChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:appendChat"
+      },
+      "loadChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:loadChat"
+      },
+      "rebindChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:rebindChat"
+      }
+    }
+  },
+  "html": {
+    "htmlApi": {
+      "consumePending": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HTML_CHANNELS.consumePending"
+      },
+      "consumeHeadlessExport": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HTML_CHANNELS.consumeHeadlessExport"
+      },
+      "headlessExportDone": {
+        "kind": "send",
+        "params": [
+          "result"
+        ],
+        "channel": "HTML_CHANNELS.headlessExportDone"
+      },
+      "readFile": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "HTML_CHANNELS.readFile"
+      },
+      "updatePreview": {
+        "kind": "send",
+        "params": [
+          "text"
+        ],
+        "channel": "HTML_CHANNELS.previewUpdate"
+      },
+      "getPreviewInfo": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HTML_CHANNELS.previewInfo"
+      },
+      "setPresentFullScreen": {
+        "kind": "invoke",
+        "params": [
+          "on"
+        ],
+        "channel": "HTML_CHANNELS.presentFullScreen"
+      },
+      "presentInNewTab": {
+        "kind": "invoke",
+        "params": [
+          "title"
+        ],
+        "channel": "HTML_CHANNELS.presentNewTab"
+      },
+      "save": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "HTML_CHANNELS.save"
+      },
+      "setDirty": {
+        "kind": "send",
+        "params": [
+          "dirty"
+        ],
+        "channel": "HTML_CHANNELS.dirtyChanged"
+      },
+      "onSaveRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "HTML_CHANNELS.saveRequest"
+      },
+      "onCloseSaveRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "HTML_CHANNELS.closeSaveRequest"
+      },
+      "sendCloseSaveResult": {
+        "kind": "send",
+        "params": [
+          "ok"
+        ],
+        "channel": "HTML_CHANNELS.closeSaveResult"
+      },
+      "sendSaveRequestAck": {
+        "kind": "send",
+        "params": [
+          "ok"
+        ],
+        "channel": "HTML_CHANNELS.saveRequestAck"
+      },
+      "onReadTextRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "HTML_CHANNELS.readTextRequest"
+      },
+      "sendReadTextResult": {
+        "kind": "send",
+        "params": [
+          "result"
+        ],
+        "channel": "HTML_CHANNELS.readTextResult"
+      },
+      "onFileRenamed": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "HTML_CHANNELS.fileRenamed"
+      },
+      "setProvisionalTitle": {
+        "kind": "send",
+        "params": [
+          "title"
+        ],
+        "channel": "HTML_CHANNELS.provisionalTitle"
+      },
+      "pickImage": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HTML_CHANNELS.pickImage"
+      },
+      "saveImage": {
+        "kind": "invoke",
+        "params": [
+          "data"
+        ],
+        "channel": "HTML_CHANNELS.saveImage"
+      },
+      "readImage": {
+        "kind": "invoke",
+        "params": [
+          "src"
+        ],
+        "channel": "HTML_CHANNELS.readImage"
+      },
+      "pickAttachments": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HTML_CHANNELS.filesPick"
+      },
+      "addAttachmentPaths": {
+        "kind": "invoke",
+        "params": [
+          "paths"
+        ],
+        "channel": "HTML_CHANNELS.filesAdd"
+      },
+      "addPastedImage": {
+        "kind": "invoke",
+        "params": [
+          "data",
+          "ext"
+        ],
+        "channel": "HTML_CHANNELS.filesAddPastedImage"
+      },
+      "readAttachment": {
+        "kind": "invoke",
+        "params": [
+          "path",
+          "offset",
+          "maxChars"
+        ],
+        "channel": "HTML_CHANNELS.filesRead"
+      },
+      "readAttachmentImage": {
+        "kind": "invoke",
+        "params": [
+          "path"
+        ],
+        "channel": "HTML_CHANNELS.filesReadImage"
+      },
+      "getPathForFile": {
+        "kind": "invoke",
+        "params": [
+          "file"
+        ],
+        "channel": "webUtils.getPathForFile"
+      },
+      "onExportRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "HTML_CHANNELS.exportRequest"
+      },
+      "onPrintRequest": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "HTML_CHANNELS.printRequest"
+      },
+      "exportDocx": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "HTML_CHANNELS.exportDocx"
+      },
+      "exportPdf": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "HTML_CHANNELS.exportPdf"
+      },
+      "exportHtml": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "HTML_CHANNELS.exportHtml"
+      },
+      "getLanguage": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HTML_CHANNELS.getLanguage"
+      },
+      "onLanguageChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "HTML_CHANNELS.languageChanged"
+      },
+      "getTheme": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HTML_CHANNELS.getTheme"
+      },
+      "onThemeChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "HTML_CHANNELS.themeChanged"
+      },
+      "getAutoSaveDefault": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HTML_CHANNELS.getAutoSaveDefault"
+      },
+      "onAutoSaveDefaultChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "HTML_CHANNELS.autoSaveDefaultChanged"
+      },
+      "getAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "HTML_CHANNELS.getAiPanelPrefs"
+      },
+      "setAiPanelPrefs": {
+        "kind": "invoke",
+        "params": [
+          "patch"
+        ],
+        "channel": "app:set-ai-panel-prefs"
+      },
+      "onAiPanelPrefsChanged": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "HTML_CHANNELS.aiPanelPrefsChanged"
+      },
+      "onChromePressed": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "app:chrome-pressed"
+      },
+      "getAiSettings": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "AI_CHANNELS.getSettings"
+      },
+      "aiGskStatus": {
+        "kind": "invoke",
+        "params": [],
+        "channel": "AI_CHANNELS.gskStatus"
+      },
+      "aiStream": {
+        "kind": "invoke",
+        "params": [
+          "request"
+        ],
+        "channel": "AI_CHANNELS.stream"
+      },
+      "aiStreamCancel": {
+        "kind": "invoke",
+        "params": [
+          "requestId"
+        ],
+        "channel": "AI_CHANNELS.streamCancel"
+      },
+      "onAiStream": {
+        "kind": "event",
+        "params": [
+          "handler"
+        ],
+        "channel": "AI_CHANNELS.streamChunk"
+      },
+      "webSearch": {
+        "kind": "invoke",
+        "params": [
+          "query",
+          "maxResults"
+        ],
+        "channel": "AI_CHANNELS.webSearch"
+      },
+      "imageSearch": {
+        "kind": "invoke",
+        "params": [
+          "query",
+          "maxResults"
+        ],
+        "channel": "AI_CHANNELS.imageSearch"
+      },
+      "fetchImage": {
+        "kind": "invoke",
+        "params": [
+          "url"
+        ],
+        "channel": "HTML_CHANNELS.fetchImage"
+      },
+      "aiGenerateImage": {
+        "kind": "invoke",
+        "params": [
+          "op"
+        ],
+        "channel": "HTML_CHANNELS.aiGenerateImage"
+      }
+    },
+    "projectApi": {
+      "resolveChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:resolveChat"
+      },
+      "appendChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:appendChat"
+      },
+      "loadChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:loadChat"
+      },
+      "rebindChat": {
+        "kind": "invoke",
+        "params": [
+          "args"
+        ],
+        "channel": "project:rebindChat"
+      }
+    }
+  }
+}
